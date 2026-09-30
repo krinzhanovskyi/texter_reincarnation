@@ -40,7 +40,7 @@ python main.py
 
 2. Copy the desired text (Ctrl+C). The program will load it automatically upon startup. If the app is already running, click **Update** _(Update from clipboard)_.
 3. Click **"Start** _(Start typing)_.
-4. You will have exactly **3 seconds** to switch to your browser or target application and click inside the desired text field.
+4. You will have exactly **5 seconds** to switch to your browser or target application and click inside the desired text field.
 5. To immediately cancel the typing process, press the **F12** key (this works globally, even if the application window is not active).
 
 ## Important Notes (Windows)
