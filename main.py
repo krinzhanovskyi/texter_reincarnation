@@ -6,6 +6,7 @@ import pyperclip
 import keyboard
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QTextEdit, QPushButton, QLabel
 from PyQt6.QtCore import Qt, pyqtSignal, QObject
+from PyQt6.QtGui import QIcon
 
 class WorkerSignals(QObject):
     update_status = pyqtSignal(str)
@@ -24,7 +25,8 @@ class AutoTyperApp(QWidget):
         keyboard.add_hotkey('f12', self.panic)
 
     def initUI(self):
-        self.setWindowTitle('AutoTyper')
+        self.setWindowTitle('TEXTER BY REINCARNATION')
+        self.setWindowIcon(QIcon('icon.png'))
         self.resize(400, 300)
         # 1st project window
         self.setWindowFlag(Qt.WindowType.WindowStaysOnTopHint)
