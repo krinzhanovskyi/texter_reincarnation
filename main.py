@@ -4,6 +4,7 @@ import random
 import threading
 import pyperclip
 import keyboard
+import ctypes
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QTextEdit, QPushButton, QLabel
 from PyQt6.QtCore import Qt, pyqtSignal, QObject
 from PyQt6.QtGui import QIcon
@@ -103,6 +104,9 @@ class AutoTyperApp(QWidget):
         self.btn_start.setEnabled(True)
 
 if __name__ == '__main__':
+    myappid = 'my_custom_autotyper_v1' 
+    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
+    
     app = QApplication(sys.argv)
     window = AutoTyperApp()
     window.show()
