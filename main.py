@@ -5,9 +5,17 @@ import threading
 import pyperclip
 import keyboard
 import ctypes
+import os
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QTextEdit, QPushButton, QLabel, QSlider
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt, pyqtSignal, QObject
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 class WorkerSignals(QObject):
     update_status = pyqtSignal(str)
@@ -28,7 +36,7 @@ class AutoTyperApp(QWidget):
 
     def initUI(self):
         self.setWindowTitle('Texter Reincarnation')
-        self.setWindowIcon(QIcon('icon.png'))
+        self.setWindowIcon(QIcon(resource_path('icon.png')))
         self.resize(400, 380)
         self.setWindowFlag(Qt.WindowType.WindowStaysOnTopHint)
 

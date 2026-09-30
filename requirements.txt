@@ -2,3 +2,4 @@ pyperclip
 keyboard
 PyQt6
 pyinstaller
+Pillow
