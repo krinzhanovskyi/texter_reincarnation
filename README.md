@@ -1,6 +1,6 @@
-<a href="https://stand-with-ukraine.pp.ua"><img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraineFlat.svg" alt="#StandWithUkraine" /></a>
+<p align="center"><br/><a href="https://stand-with-ukraine.pp.ua"><img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraineFlat.svg" alt="#StandWithUkraine" /></a>
 
-# Texter Reincarnation
+# Texter Reincarnation</br>
 
 A lightweight desktop Python (PyQt6) application for automatic character-by-character text input. It simulates real human typing, allowing you to bypass paste (Ctrl+V) restrictions on websites and in various applications.
 
