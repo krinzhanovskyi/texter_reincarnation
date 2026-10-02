@@ -59,7 +59,7 @@ class AutoTyperApp(QWidget):
 
         self.slider_speed = QSlider(Qt.Orientation.Horizontal)
         self.slider_speed.setMinimum(1)
-        self.slider_speed.setMaximum(50)
+        self.slider_speed.setMaximum(100)
         self.slider_speed.setValue(self.current_speed)
         self.slider_speed.valueChanged.connect(self.update_speed_label)
         layout.addWidget(self.slider_speed)
