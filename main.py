@@ -53,13 +53,13 @@ class AutoTyperApp(QWidget):
         self.text_preview = QTextEdit()
         layout.addWidget(self.text_preview)
 
-        # Speed adjustment slider (1 to 50 chars/sec)
+        # Speed adjustment slider (1 to 250 chars/sec)
         self.lbl_speed = QLabel(f'Speed: {self.current_speed} chars/s')
         layout.addWidget(self.lbl_speed)
 
         self.slider_speed = QSlider(Qt.Orientation.Horizontal)
         self.slider_speed.setMinimum(1)
-        self.slider_speed.setMaximum(100)
+        self.slider_speed.setMaximum(250)
         self.slider_speed.setValue(self.current_speed)
         self.slider_speed.valueChanged.connect(self.update_speed_label)
         layout.addWidget(self.slider_speed)
